@@ -1,0 +1,17 @@
+a.log {
+  color: grey;
+  text-decoration: none;
+}
+
+a.log:hover {
+  color: black;
+}
+
+a.reg {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a.reg:hover {
+  color: white;
+}
