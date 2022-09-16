@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <title>CV - Rio Griya Putra</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hacktiv8</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">INVENTORY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-3 mt-3">
+      <div class="row">
+        <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2">
+          <img src="assets/me.jpg" class="rounded-circle profile-update" alt="" />
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-5 col-xl-4">
+          <h1 id="namaLengkap">Rio Griya Putra</h1>
+          <p>Front End Designer</p>
+          <button type="button" class="btn btn-primary btn-lg">Kontak</button>
+          <button type="button" class="btn btn-outline-success btn-lg">Resume</button>
+        </div>
+        <div class="col-sm-auto col-md-auto col-lg-2 col-xl-2">
+          <p class="fw-bold">Availability</p>
+          <p class="fw-bold">Usia</p>
+          <p class="fw-bold">Lokasi</p>
+          <p class="fw-bold">Pengalaman</p>
+          <p class="fw-bold">Email</p>
+        </div>
+        <div class="col-sm-auto col-md-auto col-lg-2 col-xl-2">
+          <p class="text-dark">Full Time</p>
+          <p class="text-dark">21</p>
+          <p class="text-dark">Jakarta</p>
+          <p class="text-dark">Magang</p>
+          <p class="text-dark">riop4u@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <label for="Nama" class="mb-2">Nama</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Masukkan Nama Anda" aria-label="Nama" aria-describedby="basic-addon2" id="nama" />
+      </div>
+      <label for="Role" class="mb-2">Role</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Role" aria-describedby="basic-addon2" />
+      </div>
+      <label for="Availability" class="mb-2">Availability</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Availability" aria-describedby="basic-addon2" />
+      </div>
+      <label for="Usia" class="mb-2">Usia</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" aria-label="Usia" aria-describedby="basic-addon2" />
+      </div>
+      <label for="Lokasi" class="mb-2">Lokasi</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Lokasi" aria-describedby="basic-addon2" />
+      </div>
+      <label for="Year Experience" class="mb-2">Year Experience</label>
+      <div class="input-group mb-3">
+        <input type="number" class="form-control" aria-label="Year Experience" aria-describedby="basic-addon2" />
+      </div>
+      <label for="Email" class="mb-2">Email</label>
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" aria-label="Email" aria-describedby="basic-addon2" />
+      </div>
+
+      <div class="input-group mb-3 mt-5">
+        <input type="button" class="form-control bg-success text-white" aria-label="Button" aria-describedby="basic-addon2" value="Submit" id="submit" onclick="change_profile()" />
+      </div>
+    </div>
+    <div class="container-fluid border-top bg-light py-3 my-3">
+      <footer class="container d-flex flex-wrap justify-content-between align-items-center">
+        <p class="col-md-4 mb-0">Copryright &copy; 2022 PTP Dev. Team, All Right Reserved</p>
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"> </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Develop by www.hacktiv8.com</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/sciprt.js"></script>
+  </body>
+</html>
