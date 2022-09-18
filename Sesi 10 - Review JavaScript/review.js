@@ -1,22 +1,3 @@
-// Excercises 1
-let buah = ["Apel", "Mangga", "Jambu", "Pisang", "Nanas"];
-
-console.log(buah);
-
-buah.push("Anggur");
-
-console.log(buah);
-
-buah.splice(1, 1, "Alpukat");
-
-console.log(buah);
-
-buah.pop();
-
-console.log(buah);
-
-console.log("===================================");
-
 // Excercises 2
 const biodata = {
   nama_depan: "Fulan",
@@ -39,6 +20,7 @@ biodata.hobi.push("Coding");
 console.log("Hobi Terbaru: " + biodata.hobi.toString());
 
 biodata.lulusan = "Hacktiv8";
+console.log(biodata);
 
 console.log("Lulusan: " + biodata.lulusan);
 
@@ -51,6 +33,12 @@ console.log(Object.values(biodata));
 
 for (const property in biodata) {
   console.log(`${property}: ${biodata[property]}`);
+}
+
+for (let key in biodata) {
+  if (biodata.hasOwnProperty(key)) {
+    console.log(key + ">>" + biodata[key]);
+  }
 }
 console.log("===================================");
 // Exercises 3
@@ -68,14 +56,26 @@ tanggal1(new Date());
 console.log("===================================");
 // Exercises 4
 
+// function angka(number) {
+//   if (number % 2 === 0) {
+//     console.log("Genap");
+//   } else if (number % 2 === 1) {
+//     console.log("Ganjil");
+//   } else {
+//     console.log("Invalid Data");
+//   }
+// }
+
 function angka(number) {
   if (number % 2 === 0) {
-    console.log("Genap");
+    return "Genap";
   } else if (number % 2 === 1) {
-    console.log("Ganjil");
+    return "Ganjil";
   } else {
-    console.log("Invalid Data");
+    return "Invalid Data";
   }
 }
 
-angka("zzz");
+console.log(angka(2));
+console.log(angka(3));
+console.log(angka("zzz"));
