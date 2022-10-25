@@ -4,264 +4,190 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SM RAJ - Project 1</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
-
-    <style>
-      .nav-link {
-        font-size: 20px;
-        color: black;
-        font-weight: 50px;
-      }
-      #jumbotron {
-        text-shadow: #000 1px;
-        text-align: center;
-        padding-top: 50px;
-      }
-      #jumbotron h1 {
-        color: white;
-        font-weight: bold;
-      }
-      #jumbotron p {
-        color: white;
-      }
-      .background-jumbotron {
-        background-image: url("asset/jumbotron.jpg");
-        height: 350px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.5);
-      }
-      .btn-info {
-        background-color: lightskyblue;
-        box-shadow: none;
-        color: black;
-      }
-      .bg-blue {
-        color: lightskyblue;
-      }
-      #produk {
-        background-color: light;
-      }
-      .card-title {
-        font-weight: bold;
-      }
-      .card:hover {
-        background-color: white;
-        margin: relative;
-        box-shadow: 2px 2px 3px 3px rgb(0, 0, 0.2);
-        transition: all 0.5s ease 0s;
-      }
-      h2::before,
-      h2::after {
-        background-color: lightblue;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        vertical-align: middle;
-        width: 25%;
-      }
-      h2::before {
-        right: 0.5em;
-        margin-left: -50%;
-      }
-      h2::after {
-        left: 0.5em;
-        margin-right: -50%;
-      }
-    </style>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/icon_v2.png" type="image/x-icon" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>RAZ Panel - Portfolio</title>
   </head>
-  <body>
-    <!---Navbar menu-->
-    <section id="navbar" class="fixed-top">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="asset/logo.png" alt="logo SM RAJ" width="50px" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Keunggulan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Produk</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Portofolio </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Portofolio 1</a></li>
-                  <li><a class="dropdown-item" href="#">Portofolio 2</a></li>
-                  <li><a class="dropdown-item" href="#">Portofolio 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">About Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-
-    <!--Jumbotron Image-->
-    <section id="jumbotron" class="jumbotron-fluid background-jumbotron">
-      <div class="container-fluid py-5">
-        <h1 class="display-3">Butuh followers?</h1>
-        <p>
-          Kami menyediakan solusi untuk anda atas produk-produk berkualitas kami <br />
-          stay tuned for more updates karena akan banyak diskon yang akan kami berikan kepada anda
-        </p>
-        <button class="btn btn-info btn-md" type="button">Konsultasi</button>
-      </div>
-    </section>
-
-    <!--Bagian keunggulan-->
-    <section id="keunggulan" class="container-fluid bg-light p-4">
-      <div class="row text-center">
-        <div class="col-12 p-4">
-          <h2 class="display-5">Mengapa Harus Memilih Kami?</h2>
-        </div>
-        <div class="col-12 col-sm-4 col-lg-3">
-          <h4 class="bg-blue">Produk Lengkap</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores modi accusantium quia fugiat doloremque architecto soluta, deserunt tenetur dolorem?</p>
-        </div>
-        <div class="col-12 col-sm-4 col-lg-3">
-          <h4 class="bg-blue">Harga Terjangkau</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores modi accusantium quia fugiat doloremque architecto soluta, deserunt tenetur dolorem?</p>
-        </div>
-        <div class="col-12 col-sm-4 col-lg-3">
-          <h4 class="bg-blue">Jaminan Resmi</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores modi accusantium quia fugiat doloremque architecto soluta, deserunt tenetur dolorem?</p>
-        </div>
-        <div class="col-12 col-sm-4 col-lg-3">
-          <h4 class="bg-blue">Instan</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores modi accusantium quia fugiat doloremque architecto soluta, deserunt tenetur dolorem?</p>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg bg-nav fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="home">
+          <img src="img/icon_v3.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <section class="jumbotron text-center">
+      <img src="img/logo.png" alt="RAZPanel MEDIA" width="200px" />
+      <h1 class="display-4">Portfolio</h1>
+      <p class="container lead">
+        Page Portfolio ini digunakan untuk menggambarkan keadaan hubungan. Umumnya, istilah portfolio kerap digunakan untuk menggambarkan suatu kondisi atau deskripsi kinerja akademik seseorang di berbagai bidang sesuai kebutuhan
+        masing-masing. Pesan dapat dicapai dengan jalan pintas.
+      </p>
+      <a class="btn btn-secondary btn-lg" href="#team" role="button">Portfolio Kami</a>
     </section>
-
-    <!--Produk SM-->
-    <section id="produk" class="container">
-      <div class="row text-center">
-        <div class="col-12 p-4">
-          <h2 class="display-5">Daftar Produk</h2>
-        </div>
-        <!--produk bagian atas-->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="asset/ig.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Instagram</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#82bae2"
+        fill-opacity="1"
+        d="M0,160L40,144C80,128,160,96,240,96C320,96,400,128,480,149.3C560,171,640,181,720,160C800,139,880,85,960,106.7C1040,128,1120,224,1200,245.3C1280,267,1360,213,1400,186.7L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="card-group text-center">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Pending</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2020-06-15 03:03:03</small>
+              </div>
             </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Kurir Menjemput</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2020-06-15 03:03:03</small>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="asset/fb.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Facebook</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
-            </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="asset/tiktok.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Tiktok</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
-            </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Barang Sampai Logistik</h5>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2020-06-15 03:03:03</small>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mt-4">
-          <div class="card">
-            <img src="asset/ig.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Instagram</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
-            </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
-            </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <table class="table border-dark">
+              <thead>
+                <tr>
+                  <th scope="col">No Resi</th>
+                  <td>:</td>
+                  <td>0123125781</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Nama Pengirim</th>
+                  <td>:</td>
+                  <td>JohnDoe</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">No. Whatsapp Pengirim</th>
+                  <td>:</td>
+                  <td>0123125781</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Alamat Pengirim</th>
+                  <td>:</td>
+                  <td>Jl. Lorem ipsum dolor sit amet consectetur.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Nama Barang</th>
+                  <td>:</td>
+                  <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque.</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Berat Barang (Kg)</th>
+                  <td>:</td>
+                  <td>0123125781</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Jumlah Barang</th>
+                  <td>:</td>
+                  <td>0123125781</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Nama Penerima</th>
+                  <td>:</td>
+                  <td>John Doe</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">No. Whatsapp Penerima</th>
+                  <td>:</td>
+                  <td>0123125781</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Alamat Penerima</th>
+                  <td>:</td>
+                  <td>Jl Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, exercitationem?</td>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th scope="col">Layanan Paket</th>
+                  <td>:</td>
+                  <td>Si</td>
+                </tr>
+              </thead>
+            </table>
           </div>
-        </div>
-        <div class="col-md-4 mt-4">
-          <div class="card">
-            <img src="asset/fb.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Facebook</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
-            </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mt-4">
-          <div class="card">
-            <img src="asset/tiktok.jpg" alt="" />
-
-            <div class="card-body">
-              <h4 class="card-title">Followers Tiktok</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident iure quas veniam!</p>
-            </div>
-
-            <div class="card-footer">
-              <a href="" class="btn btn-primary" target="_blank">Detail</a>
-            </div>
-          </div>
-        </div>
-        <!--produk bagian bawah-->
-        <div class="col-12 mb-2 mt-3">
-          <a href="" class="btn btn-info">Produk lainnya</a>
         </div>
       </div>
     </section>
-
-    <!--Bagian konsultasi-->
-    <section id="konsul" class="container-fluid bg-light text-center p-2 mt-2">
-      <h2 class="display-5">Konsultasi</h2>
-      <p>Tekan tombol dibawah untuk mengirim pesan atau ajukan pertanyaan.</p>
-
-      <a href="" class="btn btn-primary" target="_blank">Konsultasi</a>
-    </section>
-
-    <!--Contact Us-->
-    <section id="About Us"></section>
-
-    <!--Bagian Footer-->
-    <footer></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Portfolio</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-muted">Blog</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 RAZPanel, Inc</p>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
