@@ -18,13 +18,21 @@ buttonInputList.addEventListener("click", function () {
 });
 
 function getLocalStorage() {
-  // const nama = JSON.parse(localStorage.getItem("user"));
-  // nama.array.forEach((element) => {
-  //   document.getElementById("username").innerText = nama;
-  // });
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    const item = JSON.parse(localStorage.getItem("user"));
-    document.getElementById("username").innerText = item;
+  const myObject = localStorage.getItem("user");
+  const parsedArr = JSON.parse(myObject);
+  for (const element of parsedArr) {
+    document.getElementById("username").innerText = `${element.inputUsername}`;
+    document.getElementById("listMenu").innerText = `${element.menu}`;
   }
+  // const table = parsedArr
+  //   .map((value) => {
+  //     return `<tr>
+  //     <th scope="row" id="number"></th>
+  //   <td id="username">${value.inputUsername}</td>
+  //   <td id="listMenu">${value.menu}</td>
+  //   </tr>`;
+  //   })
+  //   .join("");
+  // const tableBody = document.querySelector("#tableBody");
+  // tableBody.innerHTML = table;
 }
