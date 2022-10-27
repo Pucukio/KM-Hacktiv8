@@ -3,11 +3,7 @@ const usernameSocialMedia = document.querySelector("#usernameSocialMedia");
 const menuOption = document.querySelector("#menuOption");
 const buttonInputList = document.querySelector("#buttonInputList");
 
-// /*List Barang*/
-// const username = document.querySelector("#username");
-// const listMenu = document.querySelector("#listMenu");
-
-const globalArray = [];
+let globalArray = [];
 buttonInputList.addEventListener("click", function () {
   const myObject = {
     inputUsername: usernameSocialMedia.value,
@@ -18,21 +14,33 @@ buttonInputList.addEventListener("click", function () {
 });
 
 function getLocalStorage() {
-  const myObject = localStorage.getItem("user");
-  const parsedArr = JSON.parse(myObject);
-  for (const element of parsedArr) {
-    document.getElementById("username").innerText = `${element.inputUsername}`;
-    document.getElementById("listMenu").innerText = `${element.menu}`;
+  if (globalArray.length >= 1) {
+    const myObject = localStorage.getItem("user");
+    const parsedArr = JSON.parse(myObject);
+    let number = 1;
+    const table = parsedArr
+      .map((value) => {
+        return `<tr>
+      <th scope="row" id="number">${number++}</th>
+      <td id="username">${value.inputUsername}</td>
+      <td id="listMenu">${value.menu}</td>
+      </tr>`;
+      })
+      .join("");
+    const tableBody = document.querySelector("#tableBody");
+    tableBody.innerHTML = table;
+  } else {
+    document.querySelector("#tableBody").innerHTML = "";
   }
-  // const table = parsedArr
-  //   .map((value) => {
-  //     return `<tr>
-  //     <th scope="row" id="number"></th>
-  //   <td id="username">${value.inputUsername}</td>
-  //   <td id="listMenu">${value.menu}</td>
-  //   </tr>`;
-  //   })
-  //   .join("");
-  // const tableBody = document.querySelector("#tableBody");
-  // tableBody.innerHTML = table;
 }
+
+buttonPesanSekarang.addEventListener("click", function () {
+  if (document.querySelector("#tableBody").innerHTML == "") {
+    alert("PESANAN TIDAK ADA");
+  } else {
+    alert("Pesanan sedang dikirim!", localStorage.clear());
+    globalArray = [];
+    document.querySelector("#tableBody").innerHTML = "";
+    console.log(document.querySelector("#tableBody").innerHTML);
+  }
+});
