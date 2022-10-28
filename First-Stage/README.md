@@ -4,4 +4,12 @@
 
 Social Media Marketing ini menyediakan berbagai layanan terbaik dan berkualitas dengan harga yg sangat terjangkau dari semua social media untuk menaikkan peringkat social media Anda. Panel Tercepat, Termurah dan Terpercaya.
 
+## FINAL PROJECT - STAGE ONE
+
+### Dibuat Oleh
+
+1. Rio Griya Putra
+2. Ayu Sri Rahayu
+3. Zulfa Alfin Nabilah
+
 [RAZPANEL - Social Media Marketing](https://razpanel.netlify.app/)
