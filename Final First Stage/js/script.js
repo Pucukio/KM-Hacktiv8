@@ -9,8 +9,12 @@ buttonInputList.addEventListener("click", function () {
     inputUsername: usernameSocialMedia.value,
     menu: menuOption.value,
   };
-  globalArray.push(myObject);
-  localStorage.setItem("user", JSON.stringify(globalArray));
+  if (myObject.inputUsername.length && menuOption.value != "Pilih Menu") {
+    globalArray.push(myObject);
+    localStorage.setItem("user", JSON.stringify(globalArray));
+  } else {
+    alert("Username Tidak Boleh Kosong!");
+  }
 });
 
 function getLocalStorage() {
@@ -36,7 +40,7 @@ function getLocalStorage() {
 
 buttonPesanSekarang.addEventListener("click", function () {
   if (document.querySelector("#tableBody").innerHTML == "") {
-    alert("PESANAN TIDAK ADA");
+    alert("Pesanan Tidak Ada");
   } else {
     alert("Pesanan sedang dikirim!", localStorage.clear());
     globalArray = [];
