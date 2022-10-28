@@ -9,11 +9,14 @@ buttonInputList.addEventListener("click", function () {
     inputUsername: usernameSocialMedia.value,
     menu: menuOption.value,
   };
-  if (myObject.inputUsername.length && menuOption.value != "Pilih Menu") {
+
+  if (!myObject.inputUsername.length) {
+    alert("Username Tidak Boleh Kosong");
+  } else if (menuOption.value == "Pilih Menu") {
+    alert("Tolong Masukkan Menu Pilihan!");
+  } else {
     globalArray.push(myObject);
     localStorage.setItem("user", JSON.stringify(globalArray));
-  } else {
-    alert("Username Tidak Boleh Kosong!");
   }
 });
 
