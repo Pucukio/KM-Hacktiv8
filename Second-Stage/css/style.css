@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 body {
   font-family: "Nunito", sans-serif;
+}
+
+.bg-inline {
+  background-color: #f2f6ff;
+}
+
+.bg-inline:hover {
+  background-color: #e0e6f6;
+}
+
+.card-1 {
+  background-color: white;
 }
