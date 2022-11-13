@@ -13,10 +13,10 @@
 
     <title>Business Communications Reinvented</title>
   </head>
-  <body>
+  <body id="home">
     <nav class="navbar navbar-expand-lg mt-3">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#home">
           <button class="btn text-primary rounded-circle bg-inline" type="submit">═</button>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,21 +25,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#product">Product</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <button class="btn btn-outline-primary px-4 rounded-4 text-primary bg-light" type="submit">Login</button>
-            <button class="btn px-4 ms-3 rounded-4 text-primary bg-inline" type="submit">Sign Up</button>
+            <button class="btn btn-outline-primary px-4 rounded-4 text-primary bg-light" type="submit">
+              <a class="nav-link" href="#login">Login</a>
+            </button>
+            <button class="btn px-4 ms-3 rounded-4 text-primary bg-inline" type="submit">
+              <a class="nav-link" href="#signup">Sign Up</a>
+            </button>
           </form>
         </div>
       </div>
@@ -48,11 +52,14 @@
       <div class="container">
         <div class="rounded-5 p-5 my-5 bg-inline">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 col-xxl-4 py-5 px-5">
+            <div class="row align-items-center">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 px-5">
                 <h1 class="display-5 fw-bold text-primary">Business Communications Reinvented</h1>
                 <p class="fs-6">Start communicating with your business team more effciently with your app.</p>
-                <button class="btn border border-2 border-primary text-primary rounded-5 mt-3 px-4 py-3 fw-bold bg-light" type="submit">Get the app</button>
+                <button class="btn border border-2 border-primary text-primary rounded-5 mt-3 px-4 py-3 fw-bold bg-light" type="submit"><a class="nav-link" href="#getapp">Get the app</a></button>
+              </div>
+              <div class="col-12 col-sm-12 col-md-auto col-lg-6 col-xl-7">
+                <img src="img/png/jumbotron_1.png" class="img-fluid" alt="" />
               </div>
             </div>
           </div>
@@ -60,104 +67,150 @@
       </div>
     </header>
 
-    <div class="container py-5">
-      <div class="row text-start">
-        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
-          <button class="btn text-primary img-thumbnail rounded-circle bg-inline" type="submit">
+    <div class="container">
+      <div class="row g-5 my-5">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-1">
+          <button class="btn text-primary rounded-circle bg-inline" type="submit">
             <i class="fa-regular fa-cloud fa-2x"></i>
           </button>
         </div>
-        <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-5">
           <h5 class="fw-bold text-primary">Cloud Based</h5>
           <p class="fs-6">All your messages are always backed up.</p>
         </div>
-        <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
-          <button class="btn text-primary img-thumbnail rounded-circle bg-inline" type="submit">
-            <i class="fa-regular fa-cloud fa-2x"></i>
+        <div class="col-2 col-sm-2 col-md-2 col-lg-1">
+          <button class="btn text-primary rounded-circle bg-inline" type="submit">
+            <i class="fa-regular fa-lock fa-2x"></i>
           </button>
         </div>
-        <div class="col-4 col-sm-4 col-md-4 col-lg-5 col-xl-5">
-          <h5 class="fw-bold text-primary">Cloud Based</h5>
-          <p class="fs-6">All your messages are always backed up.</p>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-5">
+          <h5 class="fw-bold text-primary">Secured</h5>
+          <p class="fs-6">All your messages are stored very securely.</p>
         </div>
       </div>
     </div>
-    <section id="about1">
+    <section id="product">
       <div class="container">
-        <div class="row justify-content-between text-start">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
-              <div class="card-body text-center"></div>
+        <div class="row g-1 my-5 py-5 justify-content-evenly align-items-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-primary rounded-5 py-5 border-0 bg-inline px-2">
+              <div class="card-body text-center">
+                <img src="img/png/about_image_1.png" class="img-fluid" alt="" />
+              </div>
+              <div class="card-body text-center">
+                <img src="img/png/about_image_2.png" class="img-fluid opacity-75 w-75" alt="" />
+              </div>
+              <div class="card-body text-center">
+                <img src="img/png/about_image_3.png" class="img-fluid opacity-75 w-50" alt="" />
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <h1 class="fw-bold text-primary">Use our app to send messages to your team</h1>
+            <p class="fs-6 text-primary">We offer really easy communications for all businesses from small to large.</p>
+            <button class="btn border border-2 border-primary text-primary rounded-5 mt-3 w-50 fw-bold bg-light" type="submit">
+              <a class="nav-link" href="#getapp">Get the app</a>
+            </button>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Transform -->
-    <section class="container py-5">
-      <div class="text-primary text-center">
-        <h1 class="fw-bold">Transform your communications</h1>
-        <p class="fs-6">Our mobile app is the only thing you need to change the <br />way you communicate with your team</p>
+    <section id="about1">
+      <div class="container">
+        <div class="m-5 mt-5 pt-5 text-primary text-center">
+          <h1 class="fw-bold">Transform your communications</h1>
+          <p class="fs-6">Our mobile app is the only thing you need to change the <br />way you communicate with your team</p>
+        </div>
+        <div class="container-fluid">
+          <div class="row p-4 my-5 rounded-5 text-primary text-center bg-inline">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <img src="img/png/transform_1.png" class="img-fluid w-75" alt="" />
+            </div>
+          </div>
+          <div class="row g-1 my-5 justify-content-evenly align-items-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+              <h1 class="fw-bold text-primary">Increase the efficiency within your company</h1>
+              <p class="fs-6 text-primary">Our app is the great way for you to start getting more tasks done.</p>
+              <button class="btn border border-2 border-primary text-primary rounded-5 mt-3 w-50 fw-bold bg-light" type="submit">
+                <a class="nav-link" href="#getapp">Get the app</a>
+              </button>
+            </div>
+
+            <div id="about" class="col-12 col-sm-12 col-md-6 col-lg-4 my-5 py-3">
+              <div class="card text-primary rounded-5 py-5 border-0 bg-inline px-2">
+                <div class="card-body text-center">
+                  <img src="img/png/transform_2.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Pricing -->
-    <section class="container py-5">
-      <div class="text-primary text-center">
-        <h1 class="fw-bold">Explore our simple pricing</h1>
-        <p class="fs-6">
-          We offer one of the most competitive prices on the <br />
-          market for everyone.
-        </p>
-      </div>
-      <div class="row g-4 my-5">
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
-            <div class="card-body text-center">
-              <h5 class="card-title pb-3">Basic</h5>
-              <h1 class="fw-bolder">$9</h1>
-              <p class="card-text pb-3">Per month</p>
-              <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Learn More</button>
+    <section id="pricing">
+      <div class="container py-5">
+        <div class="text-primary text-center">
+          <h1 class="fw-bold">Explore our simple pricing</h1>
+          <p class="fs-6">
+            We offer one of the most competitive prices on the <br />
+            market for everyone.
+          </p>
+        </div>
+        <div class="row g-4 my-5">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
+              <div class="card-body text-center">
+                <h5 class="card-title pb-3">Basic</h5>
+                <h1 class="fw-bolder">$9</h1>
+                <p class="card-text pb-3">Per month</p>
+                <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Learn More</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
-            <div class="card-body text-center">
-              <h5 class="card-title pb-3">Premium</h5>
-              <h1 class="fw-bolder">$29</h1>
-              <p class="card-text pb-3">Per month</p>
-              <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Get Started</button>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
+              <div class="card-body text-center">
+                <h5 class="card-title pb-3">Premium</h5>
+                <h1 class="fw-bolder">$29</h1>
+                <p class="card-text pb-3">Per month</p>
+                <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Get Started</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
-            <div class="card-body text-center">
-              <h5 class="card-title pb-3">Basic</h5>
-              <h1 class="fw-bolder">$129</h1>
-              <p class="card-text pb-3">Per month</p>
-              <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Learn More</button>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="card text-primary rounded-5 py-5 h-100 border-0 bg-inline">
+              <div class="card-body text-center">
+                <h5 class="card-title pb-3">Basic</h5>
+                <h1 class="fw-bolder">$129</h1>
+                <p class="card-text pb-3">Per month</p>
+                <button class="btn btn-light btn-lg px-4 rounded-5 text-primary fw-bold border-0" type="submit">Learn More</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="p-5 my-3 rounded-5 text-primary text-center bg-inline">
-        <h1 class="fw-bold">Sign up to our newsletter</h1>
-        <p class="py-3">
-          Receive latest news, updates, discount and <br />
-          many other things every week.
-        </p>
-        <div class="input-group mx-auto w-50 mb-3">
-          <input type="text" class="form-control ps-4" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2" />
-          <button class="btn btn-primary fs-5" type="button" id="button-addon2">></button>
+    <section id="contact">
+      <div class="container">
+        <div class="p-5 my-3 rounded-5 text-primary text-center bg-inline">
+          <h1 class="fw-bold">Sign up to our newsletter</h1>
+          <p class="py-3">
+            Receive latest news, updates, discount and <br />
+            many other things every week.
+          </p>
+          <div class="input-group mx-auto w-50 mb-3">
+            <input type="text" class="form-control ps-4" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2" />
+            <button class="btn btn-primary fs-5" type="button" id="button-addon2">></button>
+          </div>
         </div>
       </div>
     </section>
     <!-- Footer -->
     <footer class="container">
-      <div class="bg-white p-5 ms-5" style="color: #234cad">
+      <div class="bg-white p-5 ms-5 text-primary">
         <div class="row py-3">
           <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 py-3">
             <h1 class="fw-bold mb-3">Startup.io</h1>
