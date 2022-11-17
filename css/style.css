@@ -1,0 +1,74 @@
+/* All assets follow figma 
+import 
+color
+background
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.figma-text-color {
+  color: #234cad;
+}
+
+.figma-text-color:hover {
+  color: #294a97;
+}
+
+.figma-border {
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-border:hover {
+  background-color: #fff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-border-outline {
+  background-color: #fff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-border-outline:hover {
+  background-color: #f2f6ff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-bg-color {
+  background-color: #f2f6ff;
+}
+
+.figma-bg-icon-color {
+  background-color: #f2f6ff;
+}
+.figma-bg-icon-color:hover {
+  background-color: #e4e8f0;
+}
+
+.figma-bg-link-color {
+  background-color: #fff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-bg-link-color:hover {
+  background-color: #f2f6ff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
+
+.figma-bg-color-outline {
+  background-color: #f2f6ff;
+}
+
+.figma-bg-color-outline:hover {
+  background-color: #f2f6ff;
+  outline-color: #234cad;
+  outline-style: solid;
+}
