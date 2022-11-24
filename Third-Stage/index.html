@@ -20,7 +20,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse figma-icon navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-uppercase mx-3" aria-current="page" href="#">Home</a>
@@ -61,26 +61,75 @@
       </div>
     </header>
     <section>
+      <div class="svg-icon">
+        <svg width="135" height="276" viewBox="0 0 135 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="-3" cy="138" r="138" fill="#F0F3FA" />
+        </svg>
+      </div>
       <div class="container">
-        <div class="mt-5 pt-5 text-center">
+        <div class="figma-text mt-5 pt-5 d-flex flex-column justify-content-center align-items-center">
           <h1 class="fw-bold">About Us</h1>
-
-          <hr class="figma-horizontal" />
-          <p class="fs-6">
+          <hr class="figma-horizontal mx-auto" />
+          <p class="fs-6 w-75 text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
           </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="mt-5 pt-5 text-center">
+          <h1 class="fw-bold">Our Valuable Service</h1>
+          <hr class="figma-horizontal mx-auto" />
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
+          <div class="col">
+            <div class="card figma-card-1 h-100">
+              <img src="img/card_1.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">App Development</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn figma-btn border-0 mt-5 w-50" type="submit">
+                  <a class="nav-link text-uppercase" href="#read">Read More</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card figma-card-2 h-100">
+              <img src="img/card_2.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn figma-btn border-0 mt-5 w-50" type="submit">
+                  <a class="nav-link text-uppercase" href="#read">Read More</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card figma-card-3 h-100">
+              <img src="img/card_3.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h5 class="card-title">UI UX Design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn figma-btn border-0 mt-5 w-50" type="submit">
+                  <a class="nav-link text-uppercase" href="#read">Read More</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <h4 class="fs-4">Questions, Comments, Concerns?</h4>
-            <h1 class="display-1">We’d love to hear from you!</h1>
+            <h1 class="display-1">We'd love to hear from you!</h1>
           </div>
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-7">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div class="mb-3">
               <label for="exampleFormControlInputEmail" class="form-label">Your Email Address</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="something@website.com" />

@@ -9,7 +9,52 @@ body {
   color: #fff;
 }
 
+.figma-cover-card {
+  background-color: #020e35;
+  z-index: -1;
+}
+
 .figma-horizontal {
   border: solid #e73587;
   width: 100px;
+}
+
+.figma-card-1 {
+  background-color: #fdf8e3;
+}
+
+.figma-card-2 {
+  background-color: #f0f3fa;
+}
+
+.figma-card-3 {
+  background-color: #feeff0;
+}
+
+.svg-icon {
+  position: absolute;
+  z-index: -1;
+}
+.figma-text {
+  color: black;
+}
+@media (max-width: 576px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-brand {
+    display: none;
+  }
 }
