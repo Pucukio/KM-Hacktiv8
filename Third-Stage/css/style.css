@@ -8,3 +8,8 @@ body {
   background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
   color: #fff;
 }
+
+.figma-horizontal {
+  border: solid #e73587;
+  width: 100px;
+}
