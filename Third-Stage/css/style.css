@@ -12,10 +12,12 @@ body {
 .figma-img-cover-1 {
   background-color: #f09532;
   background-size: cover;
+  height: 75vh;
 }
 .figma-img-cover-2 {
   background-color: #8c32f0;
   background-size: cover;
+  height: 75vh;
 }
 .figma-img-cover-3 {
   background-color: #e73587;
@@ -24,6 +26,7 @@ body {
 .figma-img-cover-4 {
   background-color: #32d6f0;
   background-size: cover;
+  height: 75vh;
 }
 
 .figma-horizontal {
@@ -47,9 +50,7 @@ body {
   position: absolute;
   z-index: -1;
 }
-.figma-text {
-  color: black;
-}
+
 @media (max-width: 576px) {
   .navbar-brand {
     display: none;
