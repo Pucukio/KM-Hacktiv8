@@ -23,23 +23,21 @@
         <div class="collapse figma-icon navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-uppercase mx-3" aria-current="page" href="#">Home</a>
+              <a class="nav-link figma-nav text-uppercase mx-3" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase mx-3" href="#">About</a>
+              <a class="nav-link figma-nav text-uppercase mx-3" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase mx-3" href="#">Service</a>
+              <a class="nav-link figma-nav text-uppercase mx-3" href="#">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase mx-3" href="#">Portfolio</a>
+              <a class="nav-link figma-nav text-uppercase mx-3" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link figma-nav text-uppercase mx-3" href="#">Contact Us</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <button class="btn figma-btn border-0 mx-3" type="submit">
-              <a class="nav-link text-uppercase" href="#signup">About Us</a>
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -47,13 +45,13 @@
       <div class="container">
         <div class="rounded-5 p-5 figma-bg-color">
           <div class="row align-items-center">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-5" data-aos="fade-right">
               <h1 class="display-2 fw-bold">We Create Content that ranks</h1>
               <button class="btn figma-btn border-0" type="submit">
                 <a class="nav-link text-uppercase" href="#signup">See Our Work</a>
               </button>
             </div>
-            <div class="col-12 col-sm-12 col-md-auto col-lg-6 col-xl-7 pt-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-7 pt-3" data-aos="fade-left">
               <img src="img/header.png" class="img-fluid" alt="" />
             </div>
           </div>
@@ -67,7 +65,7 @@
         </svg>
       </div>
       <div class="container">
-        <div class="mt-5 pt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="mt-5 pt-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-down">
           <h1 class="fw-bold">About Us</h1>
           <hr class="figma-horizontal mx-auto" />
           <p class="fs-6 w-75 text-center">
@@ -77,15 +75,17 @@
         </div>
       </div>
       <div class="container">
-        <div class="mt-5 pt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="mt-5 pt-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-down">
           <h1 class="fw-bold">Our Valuable Service</h1>
           <hr class="figma-horizontal mx-auto" />
         </div>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      </div>
+      <div class="container-fluid">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="fade-right">
                   <div class="card figma-card-1">
                     <img class="img-fluid" alt="img-card-1" src="img/card_1.png" />
                     <div class="card-body text-center">
@@ -97,7 +97,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="fade-down">
                   <div class="card figma-card-2">
                     <img class="img-fluid" alt="img-card-2" src="img/card_2.png" />
                     <div class="card-body text-center">
@@ -109,7 +109,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3" data-aos="fade-left">
                   <div class="card figma-card-3">
                     <img class="img-fluid" alt="img-card-3" src="img/card_3.png" />
                     <div class="card-body text-center">
@@ -164,32 +164,39 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden btn btn-lg figma-btn rounded-circle">Next</span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
     </section>
-    <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#020e35"
+        fill-opacity="1"
+        d="M0,192L48,192C96,192,192,192,288,170.7C384,149,480,107,576,90.7C672,75,768,85,864,128C960,171,1056,245,1152,256C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+    <section class="figma-cover-2">
       <div class="container">
-        <div class="mt-5 text-center">
+        <div class="text-center text-white" data-aos="fade-down">
           <h1 class="fw-bold">Our Work</h1>
           <hr class="figma-horizontal mx-auto" />
         </div>
       </div>
-      <div class="container text-center">
+      <div class="container text-center text-white">
         <div class="row g-5">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
             <div class="figma-img-cover-1 h-100">
               <img src="img/img_1.png" class="img-fluid" alt="" />
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-left">
             <h1 class="fw-bold fs-3 text-start">Brand Name</h1>
             <p class="fs-6 text-start">iOS | ANDROID | WEB DEVELOPMENT</p>
             <p class="fs-6 pt-3 text-start">
@@ -197,7 +204,7 @@
               consequat.
             </p>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-left">
             <h1 class="fw-bold fs-3 text-end">Brand Name</h1>
             <p class="fs-6 text-end">iOS | ANDROID | WEB DEVELOPMENT</p>
             <p class="fs-6 pt-3 text-end">
@@ -205,17 +212,17 @@
               consequat.
             </p>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
             <div class="figma-img-cover-2 h-100">
               <img src="img/img_2.png" class="img-fluid" alt="" />
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
             <div class="figma-img-cover-3 h-100">
               <img src="img/img_3.png" class="img-fluid" alt="" />
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-left">
             <h1 class="fw-bold fs-3 text-start">Brand Name</h1>
             <p class="fs-6 text-start">iOS | ANDROID | WEB DEVELOPMENT</p>
             <p class="fs-6 pt-3 text-start">
@@ -223,7 +230,7 @@
               consequat.
             </p>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-left">
             <h1 class="fw-bold fs-3 text-end">Brand Name</h1>
             <p class="fs-6 text-end">iOS | ANDROID | WEB DEVELOPMENT</p>
             <p class="fs-6 pt-3 text-end">
@@ -231,25 +238,32 @@
               consequat.
             </p>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
             <div class="figma-img-cover-4 h-100">
               <img src="img/img_4.png" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
-        <button class="btn figma-btn border-0 my-5" type="submit">
+        <button class="btn figma-btn border-0 mt-5" type="submit" data-aos="fade-down">
           <a class="nav-link text-uppercase" href="#read">Read More</a>
         </button>
       </div>
     </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#020e35"
+        fill-opacity="1"
+        d="M0,192L48,192C96,192,192,192,288,170.7C384,149,480,107,576,90.7C672,75,768,85,864,128C960,171,1056,245,1152,256C1248,267,1344,213,1392,186.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
     <section>
-      <div class="container mt-5">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right">
             <h4 class="fs-4">Questions, Comments, Concerns?</h4>
             <h1 class="display-1">We'd love to hear from you!</h1>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="fade-left">
             <div class="mb-3">
               <label for="exampleFormControlInputEmail" class="form-label">Your Email Address</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="something@website.com" />

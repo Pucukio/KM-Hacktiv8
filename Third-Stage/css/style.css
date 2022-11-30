@@ -4,12 +4,19 @@ body {
   font-family: "Basic", sans-serif;
 }
 
+.figma-nav:hover {
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  color: #fff;
+  border-radius: 0.375rem;
+}
 .figma-btn {
   background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
   color: #fff;
 }
-
 .figma-cover-1 {
+  background-color: #020e35;
+}
+.figma-cover-2 {
   background-color: #020e35;
 }
 
