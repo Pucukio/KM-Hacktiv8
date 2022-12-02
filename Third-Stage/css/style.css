@@ -4,6 +4,9 @@ body {
   font-family: "Basic", sans-serif;
 }
 
+section {
+  padding-top: 5rem;
+}
 .figma-nav:hover {
   background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
   color: #fff;
