@@ -3,3 +3,7 @@
 body {
   font-family: "Basic", sans-serif;
 }
+
+.bg-custom {
+  background-color: #00cba9;
+}
