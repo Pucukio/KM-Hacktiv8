@@ -7,7 +7,7 @@ body {
 .bg-custom {
   width: 100%;
   height: 400px;
-  background-image: url("/Last-Stage/img/img_cover/wave.svg");
+  background-image: url("/Last-Stage/img/img_cover/wave.png");
 
   background-size: cover;
   background-position: center;
