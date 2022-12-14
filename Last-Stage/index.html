@@ -15,34 +15,49 @@
     <link rel="shortcut icon" href="img/icon-circle.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="container pt-5">
-      <div class="card">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Input Wilayah</label>
-                <input type="text" class="form-control" id="inputWilayah" placeholder="Masukkan Nama Wilayah" />
+    <div class="bg-custom">
+      <section id="Weather">
+        <div class="container">
+          <div class="pt-5 mb-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade-down">
+            <h1 class="fw-bold">Map Cuaca</h1>
+            <hr class="figma-horizontal mx-auto" />
+            <p class="fs-6 w-75 text-center">
+              Map cuaca adalah sebuah kondisi cuaca di suatu wilayah pada suatu waktu tertentu. Map cuaca biasanya menampilkan informasi seperti wilayah, jenis cuaca, suhu dan kecepatan angin. Map cuaca sering digunakan untuk memprediksi
+              perubahan cuaca dan membantu orang-orang untuk membuat keputusan terkait aktivitas di luar ruangan.
+            </p>
+            <p class="fs-6 w-75 text-center">Cara penggunaan: masukkan input nama wilayah seperti: Jakarta</p>
+          </div>
+        </div>
+      </section>
+      <div class="container pt-5">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Input Wilayah</label>
+                  <input type="text" class="form-control" id="inputWilayah" placeholder="Masukkan Nama Wilayah" />
+                </div>
+                <div class="mb-3">
+                  <button id="submit" type="submit" class="btn btn-primary mb-3">Submit</button>
+                </div>
               </div>
-              <div class="mb-3">
-                <button id="submit" type="submit" class="btn btn-primary mb-3">Submit</button>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Result: </label>
-                <div class="row">
-                  <div class="col-md-4 col-lg-3 col-xl-3">
-                    <p>City:</p>
-                    <p>Conditions:</p>
-                    <p>Temperature:</p>
-                    <p>Wind Speed:</p>
-                  </div>
-                  <div class="col-md-8 col-lg-9 col-xl-9">
-                    <p id="city"></p>
-                    <p id="description"></p>
-                    <p id="temperature"></p>
-                    <p id="windspeed"></p>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"><h3>Result:</h3></label>
+                  <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                      <p>City:</p>
+                      <p>Conditions:</p>
+                      <p>Temperature:</p>
+                      <p>Wind Speed:</p>
+                    </div>
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9">
+                      <p id="city"></p>
+                      <p id="description"></p>
+                      <p id="temperature"></p>
+                      <p id="windspeed"></p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -50,33 +65,32 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 RAZ.co Ltd.</span>
-          </a>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fa-brands fa-github"></i>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <span class="mb-3 mb-md-0 text-muted">&copy; 2022 RAZ.co Ltd.</span>
             </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#">
-              <i class="fa-brands fa-dribbble"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="#">
+                <i class="fa-brands fa-dribbble"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

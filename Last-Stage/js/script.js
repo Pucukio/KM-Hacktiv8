@@ -17,14 +17,18 @@ let obj = {
     let { speed } = data.wind;
     document.querySelector("#city").innerText = name;
     document.querySelector("#description").innerText = description;
-    document.querySelector("#temperature").innerText = temp;
-    document.querySelector("#windspeed").innerText = speed;
+    document.querySelector("#temperature").innerText = temp + " " + "celcius";
+    document.querySelector("#windspeed").innerText = speed + " " + "mps";
   },
   submit_weather: function () {
     this.fetch_weather(document.querySelector("#inputWilayah").value);
   },
 };
 
-document.querySelector("#submit").addEventListener("click", function (e) {
-  obj.submit_weather(e);
+document.querySelector("#submit").addEventListener("click", function () {
+  if (document.querySelector("#inputWilayah").value == "") {
+    alert("Masukkan input terlebih dahulu!");
+  } else {
+    obj.submit_weather();
+  }
 });
