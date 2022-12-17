@@ -25,41 +25,61 @@
               Map cuaca adalah sebuah kondisi cuaca di suatu wilayah pada suatu waktu tertentu. Map cuaca biasanya menampilkan informasi seperti wilayah, jenis cuaca, suhu dan kecepatan angin. Map cuaca sering digunakan untuk memprediksi
               perubahan cuaca dan membantu orang-orang untuk membuat keputusan terkait aktivitas di luar ruangan.
             </p>
-            <p class="fs-6 w-75 text-center">Cara penggunaan: masukkan input nama wilayah seperti: Jakarta</p>
+            <p class="fs-6 w-75 text-center">Masukkan input nama wilayah seperti: Jakarta</p>
           </div>
         </div>
       </section>
-      <div class="container pt-5">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Input Wilayah</label>
-                  <input type="text" class="form-control" id="inputWilayah" placeholder="Masukkan Nama Wilayah" />
-                </div>
-                <div class="mb-3">
-                  <button id="submit" type="submit" class="btn btn-primary mb-3">Submit</button>
-                </div>
+      <div class="container">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Input Wilayah</label>
+                <input type="text" class="form-control" id="inputWilayah" placeholder="Masukkan Nama Wilayah" />
               </div>
-              <div class="col-md-6">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"><h3>Result:</h3></label>
-                  <div class="row">
-                    <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                      <p>City:</p>
-                      <p>Conditions:</p>
-                      <p>Temperature:</p>
-                      <p>Wind Speed:</p>
-                    </div>
-                    <div class="col-6 col-sm-8 col-md-8 col-lg-9 col-xl-9">
-                      <p id="city"></p>
-                      <p id="description"></p>
-                      <p id="temperature"></p>
-                      <p id="windspeed"></p>
-                    </div>
-                  </div>
-                </div>
+              <div class="mb-3">
+                <button id="submit" type="submit" class="btn btn-primary mb-3">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5">
+        <div class="card"></div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/img-card/city.png" class="card-img-top img-fluid" alt="Kota" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Kota</h2>
+                <p class="card-text text-center fs-3" id="city"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/img-card/conditions.png" class="card-img-top img-fluid" alt="Kondisi" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Kondisi</h2>
+                <p class="card-text text-center fs-3" id="description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/img-card/temprature.png" class="card-img-top img-fluid" alt="Temperatur" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Temperatur</h2>
+                <p class="card-text text-center fs-3" id="temperature"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/img-card/wind.png" class="card-img-top img-fluid" alt="Kecepatan Angin" />
+              <div class="card-body">
+                <h2 class="card-title text-center">Kecepatan Angin</h2>
+                <p class="card-text text-center fs-3" id="windspeed"></p>
               </div>
             </div>
           </div>

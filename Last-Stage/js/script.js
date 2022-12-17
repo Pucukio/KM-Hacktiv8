@@ -17,8 +17,8 @@ let obj = {
     let { speed } = data.wind;
     document.querySelector("#city").innerText = name;
     document.querySelector("#description").innerText = description;
-    document.querySelector("#temperature").innerText = temp + " " + "celcius";
-    document.querySelector("#windspeed").innerText = speed + " " + "mps";
+    document.querySelector("#temperature").innerText = temp + " " + "°C";
+    document.querySelector("#windspeed").innerText = speed + " " + "m/s";
   },
   submit_weather: function () {
     this.fetch_weather(document.querySelector("#inputWilayah").value);
